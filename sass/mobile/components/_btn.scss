@@ -1,0 +1,18 @@
+.button {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: calc(30 / 16);
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--tertiary-text-color);
+  background-color: var(--active-link-color);
+
+  cursor: pointer;
+  border: transparent;
+  border-radius: 4px;
+}

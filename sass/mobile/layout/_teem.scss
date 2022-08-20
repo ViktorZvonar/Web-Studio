@@ -1,0 +1,61 @@
+.teem {
+  background-color: var(--tertiary-background-color);
+}
+.teem__title,
+.clients__title {
+  margin: 0 auto 30px;
+
+  font-weight: var(--fw-bold);
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.teem__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.teem__card {
+  width: 450px;
+
+  background: var(--primary-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.teem__icon {
+  width: 450px;
+}
+
+.teem__member {
+  margin-bottom: 10px;
+
+  font-weight: var(--fw-medium);
+  font-size: var(--auxiliary-fz);
+  line-height: calc(18.75 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.teem__position {
+  font-size: var(--auxiliary-fz);
+  line-height: calc(18.75 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  margin-bottom: 16px;
+}
+
+.teem__wrap {
+  padding: 30px 0 24px;
+}

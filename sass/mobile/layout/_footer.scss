@@ -3,12 +3,12 @@
 
   &--flex {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
   }
 }
 
 .footer-address {
-  margin-right: 70px;
+  margin: 0 auto;
 }
 
 .logo__accent--inverse {
@@ -19,11 +19,15 @@
   margin-top: 20px;
 
   &__list {
-    margin-top: 9px;
+    margin-top: 8px;
   }
 
   &__item:last-child {
-    margin-top: 9px;
+    margin-top: 8px;
+  }
+
+  &__item {
+    text-align: center;
   }
 
   &__text {
@@ -33,6 +37,7 @@
     letter-spacing: 0.03em;
     color: var(--footer-address-text-color);
     text-decoration: none;
+    text-align: center;
   }
 
   &__text--physical {
@@ -50,6 +55,13 @@
   color: var(--tertiary-text-color);
 
   margin-bottom: 20px;
+
+  text-align: center;
+}
+
+.caller,
+.subscription {
+  margin-top: 60px;
 }
 
 .caller__list {
@@ -83,20 +95,26 @@
 
 .subscription {
   margin-left: auto;
+  margin-right: auto;
 }
 
-.subscription__wrap {
-  display: flex;
-}
+// .subscription__wrap {
+//     display: flex;
+// }
 
 .subcription__email {
   padding: 15px 16px;
-  margin-right: 12px;
+
   background-color: transparent;
   width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: var(--tertiary-text-color);
+
+  margin-right: auto;
+  margin-left: auto;
+
+  margin-bottom: 20px;
 
   &::placeholder {
     font-size: var(--auxiliary-fz);
@@ -108,9 +126,9 @@
 }
 
 .subscription__btn {
-  padding: 10px 28px;
+  padding: 10px 31px;
 }
 
 .subscription__icon {
-  margin-left: 10px;
+  margin-left: 12px;
 }
