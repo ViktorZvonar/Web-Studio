@@ -20,13 +20,13 @@
   --form-fz: 12px;
   --logo-fz: 26px;
   --modal-fz: 20px;
-  --fw-bold: 700px;
-  --fw-medium: 500px;
-  --fw-hero: 900px;
+  --fw-bold: 700;
+  --fw-medium: 500;
+  --fw-hero: 900;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 img {
@@ -150,14 +150,15 @@ textarea {
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-list__item:hover, .link-list__item:focus {
+.link-list__item:hover,
+.link-list__item:focus {
   color: var(--active-link-color);
 }
 .link-list__item--current {
   color: var(--active-link-color);
 }
 .link-list__item--current::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -183,7 +184,8 @@ textarea {
   fill: var(--secondary-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-list__item:hover .contact-list__icon, .contact-list__item:focus .contact-list__icon {
+.contact-list__item:hover .contact-list__icon,
+.contact-list__item:focus .contact-list__icon {
   fill: currentColor;
 }
 
@@ -199,7 +201,8 @@ textarea {
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-list__item:hover, .contact-list__item:focus {
+.contact-list__item:hover,
+.contact-list__item:focus {
   color: var(--active-link-color);
 }
 
@@ -208,7 +211,7 @@ textarea {
 }
 
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 900;
   font-size: 24px;
   line-height: 1.1666666667;
@@ -233,7 +236,8 @@ textarea {
 .hero {
   padding: 118px 0;
   width: 480px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero/hero-mobile.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bg-hero/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -252,7 +256,8 @@ textarea {
   padding: 10px 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero__btn:hover, .hero__btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
   background-color: var(--active-link-hero-color);
 }
 
@@ -365,7 +370,8 @@ textarea {
 .teem__card {
   width: 450px;
   background: var(--primary-background-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -411,7 +417,8 @@ textarea {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.network__link:hover, .network__link:focus {
+.network__link:hover,
+.network__link:focus {
   background-color: var(--active-link-color);
 }
 
@@ -419,7 +426,8 @@ textarea {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.network__link:hover .network__icon, .network__link:focus .network__icon {
+.network__link:hover .network__icon,
+.network__link:focus .network__icon {
   fill: var(--tertiary-text-color);
 }
 
@@ -444,7 +452,8 @@ textarea {
   background: var(--primary-background-color);
   border: 1px solid #afb1b8;
 }
-.clients__link:hover, .clients__link:focus {
+.clients__link:hover,
+.clients__link:focus {
   border: 1px solid var(--active-link-color);
 }
 
@@ -452,7 +461,8 @@ textarea {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients__link:hover .clients__icon, .clients__link:focus .clients__icon {
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
   fill: var(--active-link-color);
 }
 
@@ -465,7 +475,8 @@ textarea {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -485,8 +496,10 @@ textarea {
   height: 581px;
   width: 528px;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: var(--primary-background-color);
   opacity: 1;
@@ -511,7 +524,8 @@ textarea {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
-.close__btn:focus .close__icon, .close__btn:hover .close__icon {
+.close__btn:focus .close__icon,
+.close__btn:hover .close__icon {
   fill: var(--active-link-color);
 }
 
@@ -537,7 +551,8 @@ textarea {
   left: 12px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__input:focus + .form__icon, .form__input:hover + .form__icon {
+.form__input:focus + .form__icon,
+.form__input:hover + .form__icon {
   fill: var(--active-link-color);
 }
 
@@ -558,7 +573,8 @@ textarea {
   cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__input:focus, .form__input:hover {
+.form__input:focus,
+.form__input:hover {
   border-color: var(--active-link-color);
 }
 
@@ -571,7 +587,8 @@ textarea {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   resize: none;
 }
-.form__comment:focus, .form__comment:hover {
+.form__comment:focus,
+.form__comment:hover {
   border-color: var(--active-link-color);
 }
 .form__comment::placeholder {
@@ -606,7 +623,8 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .check__imput:focus + .check__label .check__span {
   border-color: var(--active-link-color);
@@ -652,9 +670,11 @@ textarea {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--tertiary-background-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.filter__btn:hover, .filter__btn:focus {
+.filter__btn:hover,
+.filter__btn:focus {
   color: var(--tertiary-text-color);
   background-color: var(--active-link-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -734,7 +754,8 @@ textarea {
   background-color: rgba(255, 255, 255, 0.1019607843);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.caller__link:hover, .caller__link:focus {
+.caller__link:hover,
+.caller__link:focus {
   background-color: var(--active-link-color);
 }
 
@@ -771,4 +792,4 @@ textarea {
 
 .subscription__icon {
   margin-left: 12px;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
