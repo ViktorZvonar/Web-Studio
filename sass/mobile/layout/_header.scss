@@ -23,7 +23,7 @@
 }
 
 .link-list__item {
-  font-weight: var(--fw-medium);
+  font-weight: 500;
   font-size: var(--main-fz);
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
@@ -81,7 +81,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: var(--fw-medium);
+  font-weight: 500;
   font-size: var(--main-fz);
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
