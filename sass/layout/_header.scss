@@ -1,5 +1,6 @@
 .header {
   border-bottom: var(--primary-border-features);
+  padding: 16px 0;
 }
 
 .link-list {
@@ -7,6 +8,10 @@
   align-items: center;
   margin-right: auto;
   margin-left: 93px;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 }
 
 .link-list__name {
@@ -56,6 +61,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 }
 
 .contact-list__icon {

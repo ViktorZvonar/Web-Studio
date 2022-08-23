@@ -1,12 +1,11 @@
 .container {
   width: 100%;
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  &--flex {
-    display: flex;
-    align-items: center;
-  }
+  // &--flex {
+  //   display: flex;
+  //   align-items: center;
+  // }
 
   @media screen and (min-width: 480px) {
     width: 480px;

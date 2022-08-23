@@ -1,3 +1,9 @@
+.activities {
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+
 .activities__title {
   font-weight: var(--fw-bold);
   font-size: var(--title-fz);
