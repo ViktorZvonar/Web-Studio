@@ -3,7 +3,8 @@
 
   &__list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+
     gap: 30px;
   }
 
@@ -27,11 +28,23 @@
     margin-top: 30px;
     margin-bottom: 10px;
   }
-  &__text {
+
+  &__description {
     font-size: var(--main-fz);
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+  }
+
+  &__item {
+    height: 100%;
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 3 * 30px) / 4);
+    }
   }
 }
 
