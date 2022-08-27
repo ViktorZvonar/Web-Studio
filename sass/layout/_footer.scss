@@ -37,7 +37,8 @@
   }
 }
 
-.caller {
+.caller,
+.subscription {
   margin-top: 60px;
 }
 
@@ -82,10 +83,6 @@
   fill: var(--tertiary-text-color);
 }
 
-.subscription {
-  margin: 60px auto 0;
-}
-
 .subscription__wrap {
   display: flex;
   flex-direction: column;
@@ -94,7 +91,7 @@
 .subcription__email {
   padding: 15px 16px;
   background-color: transparent;
-  width: 358px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: var(--tertiary-text-color);
