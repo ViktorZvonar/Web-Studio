@@ -121,38 +121,24 @@ textarea {
 
 .header {
   border-bottom: var(--primary-border-features);
-  padding: 16px 0;
   position: relative;
 }
-
-.menu-toggle {
-  position: absolute;
-  top: 11px;
-  right: 11px;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none;
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 16px 0;
   }
-}
-
-.menu-toggle:hover,
-.menu-toggle:focus {
-  fill: var(--active-link-color);
 }
 
 .link-list {
   display: flex;
   align-items: center;
   margin-right: auto;
-  margin-left: 93px;
+  margin-left: 88px;
+}
+@media screen and (max-width: 767px) {
+  .link-list {
+    display: none;
+  }
 }
 
 .link-list__name {
@@ -193,12 +179,19 @@ textarea {
 
 .contact-list {
   display: flex;
+  flex-direction: column;
+  gap: 10px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+}
+@media screen and (max-width: 767px) {
+  .contact-list {
+    display: none;
+  }
 }
 
 .contact-list__icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: var(--secondary-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -211,8 +204,8 @@ textarea {
   align-items: center;
   justify-content: center;
   font-weight: var(--fw-medium);
-  font-size: var(--main-fz);
-  line-height: 1.1428571429;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   text-decoration: none;
@@ -222,14 +215,27 @@ textarea {
   color: var(--active-link-color);
 }
 
-.contact-list__name:not(:last-child) {
-  margin-right: 50px;
+.menu-toggle {
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-@media screen and (max-width: 767px) {
-  .header__big-screen {
+@media screen and (min-width: 768px) {
+  .menu-toggle {
     display: none;
   }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  fill: var(--active-link-color);
 }
 
 .menu-container {
@@ -368,6 +374,11 @@ textarea {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 200px 0;
+  }
+}
 .hero__title {
   margin-bottom: 30px;
   font-weight: var(--fw-hero);
@@ -384,6 +395,11 @@ textarea {
 }
 .hero__btn:hover, .hero__btn:focus {
   background-color: var(--active-link-hero-color);
+}
+@media screen and (min-width: 768px) {
+  .hero__btn {
+    padding: 10px 32px;
+  }
 }
 
 .benefit {
@@ -433,7 +449,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1199px) {
   .activities {
     display: none;
   }
@@ -493,7 +509,7 @@ textarea {
 
 .teem__list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -501,6 +517,17 @@ textarea {
   background: var(--primary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .teem__card {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .teem__card {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .teem__member {
@@ -528,7 +555,6 @@ textarea {
 
 .teem__icon {
   width: 100%;
-  height: 100%;
 }
 
 .network__list {
@@ -883,9 +909,12 @@ textarea {
   padding: 60px 0;
   text-align: center;
 }
-.footer--flex {
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 768px) {
+  .footer--flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 
 .logo__accent--inverse {
@@ -913,7 +942,12 @@ textarea {
   color: var(--tertiary-text-color);
 }
 
-.caller,
+@media screen and (max-width: 767px) {
+  .caller {
+    margin-top: 60px;
+  }
+}
+
 .subscription {
   margin-top: 60px;
 }
@@ -953,14 +987,10 @@ textarea {
   fill: var(--tertiary-text-color);
 }
 
-.subscription__wrap {
-  display: flex;
-  flex-direction: column;
-}
-
 .subcription__email {
   padding: 15px 16px;
   background-color: transparent;
+  max-width: 450px;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -972,7 +1002,6 @@ textarea {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .subscription__btn {
   padding: 10px 31px;
   margin-top: 20px;

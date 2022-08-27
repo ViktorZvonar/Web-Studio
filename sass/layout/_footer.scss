@@ -3,8 +3,11 @@
   text-align: center;
 
   &--flex {
-    display: flex;
-    flex-direction: column;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+    }
   }
 }
 
@@ -37,7 +40,12 @@
   }
 }
 
-.caller,
+.caller {
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+}
+
 .subscription {
   margin-top: 60px;
 }
@@ -83,14 +91,15 @@
   fill: var(--tertiary-text-color);
 }
 
-.subscription__wrap {
-  display: flex;
-  flex-direction: column;
-}
+// .subscription__wrap {
+//   display: flex;
+//   flex-direction: column;
+// }
 
 .subcription__email {
   padding: 15px 16px;
   background-color: transparent;
+  max-width: 450px;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -102,6 +111,8 @@
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
+  }
+  @media screen and (min-width: 768px) {
   }
 }
 
