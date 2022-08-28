@@ -27,7 +27,13 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--tertiary-text-color);
+
+    @media screen and (min-width: 1200px) {
+      font-size: var(--hero-fz);
+      line-height: calc(60 / 44);
+    }
   }
+
   &__btn {
     padding: 10px 24px;
 

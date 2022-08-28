@@ -62,12 +62,18 @@
 
 .contact-list {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
   justify-content: center;
-  align-items: flex-start;
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
   @media screen and (max-width: 767px) {
     display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: center;
   }
 }
 
@@ -78,6 +84,12 @@
   .contact-list__item:hover &,
   .contact-list__item:focus & {
     fill: currentColor;
+  }
+}
+
+.contact-list__icon {
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
   }
 }
 
@@ -96,11 +108,18 @@
   &:focus {
     color: var(--active-link-color);
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: var(--main-fz);
+    line-height: calc(16 / 14);
+  }
 }
 
-// .contact-list__name:not(:last-child) {
-//   margin-right: 50px;
-// }
+.contact-list__name:not(:last-child) {
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
+}
 
 .menu-toggle {
   position: absolute;

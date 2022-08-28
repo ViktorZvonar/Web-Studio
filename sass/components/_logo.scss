@@ -9,17 +9,9 @@
   &__accent {
     color: var(--accent-color);
   }
-}
 
-// .logo {
-//   font-family: 'Raleway', sans-serif;
-//   font-weight: var(--fw-bold);
-//   font-size: var(--logo-fz);
-//   line-height: calc(35.96 / 26);
-//   letter-spacing: 0.03em;
-//   color: var(--logo-text-color);
-//   text-decoration: none;
-//   &__accent {
-//     color: var(--accent-color);
-//   }
-// }
+  @media screen and (min-width: 1200px) {
+    font-size: var(--logo-fz);
+    line-height: calc(36 / 26);
+  }
+}
