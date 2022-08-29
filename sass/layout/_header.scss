@@ -221,6 +221,10 @@
 .mobile-contacts__name {
   font-size: 34px;
   line-height: calc(40 / 34);
+
+  @media screen and (max-width: 479px) {
+    font-size: 24px;
+  }
 }
 
 .mobile-contacts__name:first-child {
@@ -233,21 +237,38 @@
 .menu-network {
   display: flex;
   margin-top: 64px;
+  @media screen and (max-width: 479px) {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
 
 .menu-network__item:nth-child(1) {
   padding-right: 10px;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+  @media screen and (min-width: 480px) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+
+  @media screen and (max-width: 479px) {
+    padding-left: 10px;
+  }
 }
 
 .menu-network__item:nth-child(2) {
   padding: 0 10px;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+  @media screen and (min-width: 480px) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
 }
 
 .menu-network__item:nth-child(3) {
   padding: 0 10px;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+  @media screen and (min-width: 480px) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
 }
 
 .menu-network__item:nth-child(4) {
