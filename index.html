@@ -192,21 +192,30 @@
           <ul class="activities__list">
             <li class="activities__item">
               <div class="activities__thumb">
-                <img src="./images/box1.jpg" alt="займаємся1" width="370" />
+                <img 
+                srcset="./images/box1.jpg 1x, ./images/box1-2x.jpg 2x"
+                
+                src="./images/box1.jpg" alt="займаємся1" width="370" />
                 <p class="activities__text">Десктопні додатки</p>
               </div>
             </li>
 
             <li class="activities__item">
               <div class="activities__thumb">
-                <img src="./images/box2.jpg" alt="займаємся2" width="370" />
+                <img 
+                srcset="./images/box2.jpg 1x, ./images/box2-2x.jpg 2x"
+                
+                src="./images/box2.jpg" alt="займаємся2" width="370" />
                 <p class="activities__text">Мобільні додатки</p>
               </div>
             </li>
 
             <li class="activities__item">
               <div class="activities__thumb">
-                <img src="./images/box3.jpg" alt="займаємся3" width="370" />
+                <img 
+                srcset="./images/box3.jpg 1x, ./images/box3-2x.jpg 2x"
+                
+                src="./images/box3.jpg" alt="займаємся3" width="370" />
                 <p class="activities__text">Дизайнерські рішення</p>
               </div>
             </li>
@@ -219,7 +228,25 @@
           <h2 class="teem__title">Наша команда</h2>
           <ul class="teem__list">
             <li class="teem__card">
-              <img class="teem__icon" src="./images/teem/igor.jpg" alt="Игорь" width="270" />
+              <picture>
+
+                <source  
+                srcset="./images/teem/igor.jpg 1x, ./images/teem/igor-2x.jpg 1x 2x"
+                media="(min-width: 1200px)"
+                />
+                <source  
+                srcset="./images/teem/igor-tab/igor-tab-1x.jpg 1x, ./images/teem/igor-tab/igor-tab-2x.jpg 2x"
+                media="(min-width: 768px)"
+                />
+                <source  
+                srcset="./images/teem/igor-mob/igor-mob-1x.jpg 1x, ./images/teem/igor-mob/igor-mob-2x.jpg 2x"
+                media="(max-width: 767px)"
+                />
+                <img class="teem__icon" 
+              src="./images/teem/igor.jpg" alt="Игорь" />
+
+              </picture>
+
               <div class="teem__wrap">
                 <h3 class="teem__member">Ігор Дем'яненко</h3>
                 <p lang="en" class="teem__position">Product Designer</p>
@@ -252,7 +279,26 @@
               </div>
             </li>
             <li class="teem__card">
-              <img class="teem__icon" src="./images/teem/olga.jpg" alt="Ольга" width="270" />
+
+              <picture>
+
+                <source  
+                srcset="./images/teem/olga.jpg 1x, ./images/teem/olga-2x.jpg 1x 2x"
+                media="(min-width: 1200px)"
+                />
+                <source  
+                srcset="./images/teem/olga-tab/olga-tab-1x.jpg 1x, ./images/teem/olga-tab/olga-tab-2x.jpg 2x"
+                media="(min-width: 768px)"
+                />
+                <source  
+                srcset="./images/teem/olga-mob/olga-mob-1x.jpg 1x, ./images/teem/olga-mob/olga-mob-2x.jpg 2x"
+                media="(max-width: 767px)"
+                />
+                <img class="teem__icon" 
+              src="./images/teem/olga.jpg" alt="Ольга" />
+
+              </picture>
+
               <div class="teem__wrap">
                 <h3 class="teem__member">Ольга Рєпіна</h3>
                 <p lang="en" class="teem__position">Frontend Developer</p>
@@ -286,7 +332,24 @@
               </div>
             </li>
             <li class="teem__card">
-              <img class="teem__icon" src="./images/teem/nickolai.jpg" alt="Николай" width="270" />
+              <picture>
+
+                <source  
+                srcset="./images/teem/nickolai.jpg 1x, ./images/teem/nickolai-2x.jpg 1x 2x"
+                media="(min-width: 1200px)"
+                />
+                <source  
+                srcset="./images/teem/nickolai-tab/nickolai-tab-1x.jpg 1x, ./images/teem/nickolai-tab/nickolai-tab-2x.jpg 2x"
+                media="(min-width: 768px)"
+                />
+                <source  
+                srcset="./images/teem/nickolai-mob/nickolai-mob-1x.jpg 1x, ./images/teem/nickolai-mob/nickolai-mob-2x.jpg 2x"
+                media="(max-width: 767px)"
+                />
+                <img class="teem__icon" src="./images/teem/olga.jpg" alt="Николай" />
+
+              </picture>              
+             
               <div class="teem__wrap">
                 <h3 class="teem__member">Микола Тарасов</h3>
                 <p lang="en" class="teem__position">Marketing</p>
@@ -320,7 +383,25 @@
               </div>
             </li>
             <li class="teem__card">
-              <img class="teem__icon" src="./images/teem/mikhail.jpg" alt="Михаил" width="270" />
+
+              <picture>
+
+                <source  
+                srcset="./images/teem/mikhail.jpg 1x, ./images/teem/mikhail-2x.jpg 1x 2x"
+                media="(min-width: 1200px)"
+                />
+                <source  
+                srcset="./images/teem/mikhail-tab/mikhail-tab-1x.jpg 1x, ./images/teem/mikhail-tab/mikhail-tab-2x.jpg 2x"
+                media="(min-width: 768px)"
+                />
+                <source  
+                srcset="./images/teem/mikhail-mob/mikhail-mob-1x.jpg 1x, ./images/teem/mikhail-mob/mikhail-mob-2x.jpg 2x"
+                media="(max-width: 767px)"
+                />
+                <img class="teem__icon" src="./images/teem/olga.jpg" alt="Михаил" />
+
+              </picture>             
+
               <div class="teem__wrap">
                 <h3 class="teem__member">Михайло Єрмаков</h3>
                 <p lang="en" class="teem__position">UI Designer</p>
