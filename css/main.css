@@ -14,11 +14,15 @@
   --secondary-border-features: 1px solid #eeeeee;
   --main-fz: 14px;
   --auxiliary-fz: 16px;
-  --examples-fz: 18px;
   --title-fz: 36px;
   --hero-fz: 44px;
-  --form-fz: 12px;
-  --logo-fz: 26px;
+  --mobile-fz: 40px;
+  --mobile-contacts-fz: 34px;
+  --special-fz: 18px;
+  --minute-fz: 12px;
+  --occasional-fz: 26px;
+  --title-mob-tab-fz: 28px;
+  --mob-tab-fz: 24px;
   --modal-fz: 20px;
   --fw-bold: 700;
   --fw-medium: 500;
@@ -224,7 +228,7 @@ textarea {
   align-items: center;
   justify-content: center;
   font-weight: var(--fw-medium);
-  font-size: 12px;
+  font-size: var(--minute-fz);
   line-height: 1.1666666667;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
@@ -244,6 +248,25 @@ textarea {
 @media screen and (min-width: 1200px) {
   .contact-list__name:not(:last-child) {
     margin-right: 50px;
+  }
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: var(--fw-bold);
+  font-size: var(--mob-tab-fz);
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
+  color: var(--logo-text-color);
+  text-decoration: none;
+}
+.logo__accent {
+  color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: var(--occasional-fz);
+    line-height: 1.3846153846;
   }
 }
 
@@ -297,7 +320,7 @@ textarea {
 
 .mobile-list__item {
   font-weight: var(--fw-medium);
-  font-size: 40px;
+  font-size: var(--mobile-fz);
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -314,6 +337,7 @@ textarea {
 .mobile-contacts {
   display: flex;
   flex-direction: column-reverse;
+  margin-top: 32px;
 }
 
 .mobile-contacts__icon {
@@ -337,17 +361,18 @@ textarea {
 }
 
 .mobile-contacts__name {
-  font-size: 34px;
+  font-size: var(--mobile-contacts-fz);
   line-height: 1.1764705882;
 }
 @media screen and (max-width: 479px) {
   .mobile-contacts__name {
-    font-size: 24px;
+    font-size: var(--mob-tab-fz);
+    line-height: 1.1666666667;
   }
 }
 
 .mobile-contacts__name:first-child {
-  font-size: 24px;
+  font-size: var(--mob-tab-fz);
   line-height: 1.1666666667;
   margin-top: 32px;
 }
@@ -402,29 +427,10 @@ textarea {
 .menu-network__link {
   text-decoration: none;
   font-weight: var(--fw-medium);
-  font-size: 18px;
+  font-size: var(--special-fz);
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: var(--active-link-color);
-}
-
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: var(--fw-bold);
-  font-size: 24px;
-  line-height: 1.1666666667;
-  letter-spacing: 0.03em;
-  color: var(--logo-text-color);
-  text-decoration: none;
-}
-.logo__accent {
-  color: var(--accent-color);
-}
-@media screen and (min-width: 1200px) {
-  .logo {
-    font-size: var(--logo-fz);
-    line-height: 1.3846153846;
-  }
 }
 
 .hero,
@@ -469,7 +475,7 @@ textarea {
 .hero__title {
   margin-bottom: 30px;
   font-weight: var(--fw-hero);
-  font-size: 26px;
+  font-size: var(--occasional-fz);
   line-height: 1.6153846154;
   text-align: center;
   letter-spacing: 0.06em;
@@ -603,7 +609,7 @@ textarea {
 .clients__title {
   margin: 0 auto 30px;
   font-weight: var(--fw-bold);
-  font-size: 28px;
+  font-size: var(--title-mob-tab-fz);
   line-height: 1.1785714286;
   text-align: center;
   letter-spacing: 0.03em;
@@ -614,7 +620,7 @@ textarea {
 .clients__title {
     margin: 0 auto 50px;
     font-size: var(--title-fz);
-    line-height: 1.1719444444;
+    line-height: 1.1666666667;
   }
 }
 
@@ -769,14 +775,24 @@ textarea {
   top: 50%;
   left: 50%;
   padding: 40px;
-  height: 581px;
-  width: 528px;
+  width: 450px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: var(--primary-background-color);
   opacity: 1;
+}
+@media screen and (max-width: 479px) {
+  .modal {
+    width: auto;
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .close__btn {
@@ -830,7 +846,7 @@ textarea {
 
 .form__label {
   margin-bottom: 4px;
-  font-size: var(--form-fz);
+  font-size: var(--minute-fz);
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: var(--secondary-text-color);
@@ -862,7 +878,7 @@ textarea {
   border-color: var(--active-link-color);
 }
 .form__comment::placeholder {
-  font-size: var(--form-fz);
+  font-size: var(--minute-fz);
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
@@ -878,16 +894,28 @@ textarea {
 .check__label {
   display: flex;
   align-items: center;
-  font-size: var(--main-fz);
-  line-height: 1.7142857143;
+  font-size: var(--minute-fz);
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+@media screen and (max-width: 479px) {
+  .check__label {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .check__label {
+    font-size: var(--main-fz);
+    line-height: 1.7142857143;
+  }
 }
 
 .check__span {
   width: 16px;
   height: 15px;
-  margin-right: 7px;
+  margin-right: 8px;
   border: 2px solid var(--accent-color);
   border-radius: 2px;
   display: flex;
@@ -958,7 +986,7 @@ textarea {
   width: 100%;
   height: 100%;
   padding: 77px 24px;
-  font-size: var(--examples-fz);
+  font-size: var(--special-fz);
   line-height: 1.5555555556;
   letter-spacing: 0.03em;
   color: var(--tertiary-text-color);
@@ -1016,7 +1044,7 @@ textarea {
 
 .examples__name {
   font-weight: var(--fw-bold);
-  font-size: var(--examples-fz);
+  font-size: var(--special-fz);
   line-height: 2;
   letter-spacing: 0.06em;
   height: 36px;

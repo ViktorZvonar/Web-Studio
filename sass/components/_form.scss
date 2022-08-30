@@ -18,7 +18,7 @@
 
 .form__label {
   margin-bottom: 4px;
-  font-size: var(--form-fz);
+  font-size: var(--minute-fz);
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
 
@@ -53,7 +53,7 @@
     border-color: var(--active-link-color);
   }
   &::placeholder {
-    font-size: var(--form-fz);
+    font-size: var(--minute-fz);
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
@@ -71,17 +71,27 @@
   display: flex;
   align-items: center;
 
-  font-size: var(--main-fz);
-  line-height: calc(24 / 14);
+  font-size: var(--minute-fz);
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
+
+  @media screen and (max-width: 479px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: var(--main-fz);
+    line-height: calc(24 / 14);
+  }
 }
 
 .check__span {
   width: 16px;
   height: 15px;
-  margin-right: 7px;
+  margin-right: 8px;
 
   border: 2px solid var(--accent-color);
   border-radius: 2px;

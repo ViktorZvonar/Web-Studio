@@ -21,7 +21,7 @@
   <body>
     <header class="header">
       <div class="container container--flex">
-          <a class="logo" href="./index.html" lang="en"
+        <a class="logo" href="./index.html" lang="en"
           >Web<span class="logo__accent">Studio</span></a
         >
 
@@ -30,7 +30,9 @@
             <a class="link-list__item" href="./index.html">Студія</a>
           </li>
           <li class="link-list__name">
-            <a class="link-list__item link-list__item--current" href="./portfolio.html">Портфоліо</a>
+            <a class="link-list__item link-list__item--current" href="./portfolio.html"
+              >Портфоліо</a
+            >
           </li>
           <li class="link-list__name"><a class="link-list__item" href="./">Контакт</a></li>
         </ul>
@@ -51,74 +53,79 @@
             >
           </li>
         </ul>
-        
-        <button 
-        type="button" 
-        class="menu-toggle js-open-menu" 
-        aria-expanded="false" 
-        aria-controls="mobile-menu" 
-        data-menu-button>
+
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-button
+        >
           <svg width="40" height="40" aria-label="menu-switcher">
             <use class="menu-button__sandwich" href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
         </button>
 
         <div class="menu-container js-menu-container" id="mobile-menu" data-menu>
+          <button
+            type="button"
+            class="menu-toggle js-close-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-label="menu-switcher">
+              <use class="menu-button__cross" href="./images/icons.svg#icon-close_40px"></use>
+            </svg>
+          </button>
 
-        <button 
-        type="button" 
-        class="menu-toggle js-close-menu" 
-        aria-expanded="false" 
-        aria-controls="mobile-menu" 
-        data-menu-button>
-          <svg width="40" height="40" aria-label="menu-switcher">
-            <use class="menu-button__cross" href="./images/icons.svg#icon-close_40px"></use>
-        </button>
+          <div class="mobile-top">
+            <ul class="mobile-list">
+              <li class="mobile-list__name">
+                <a class="mobile-list__item" href="./index.html">Студія</a>
+              </li>
+              <li class="mobile-list__name">
+                <a class="mobile-list__item mobile-list__item--current" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mobile-list__name"><a class="mobile-list__item" href="./">Контакт</a></li>
+            </ul>
+          </div>
 
-        <div class="mobile-top">
+          <div class="mobile-bottom">
+            <ul class="mobile-contacts">
+              <li class="mobile-contacts__name">
+                <a class="mobile-contacts__item" href="mailto:info@devstudio.com"
+                  ><svg class="mobile-contacts__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope"></use></svg
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-contacts__name">
+                <a class="mobile-contacts__item" href="tel:+380961111111"
+                  ><svg class="mobile-contacts__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-smartphone"></use></svg
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
 
-          <ul class="mobile-list">
-          <li class="mobile-list__name">
-            <a class="mobile-list__item" href="./index.html">Студія</a>
-          </li>
-          <li class="mobile-list__name">
-            <a class="mobile-list__item mobile-list__item--current" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="mobile-list__name"><a class="mobile-list__item" href="./">Контакт</a></li>
-        </ul>
+            <ul class="menu-network">
+              <li class="menu-network__item">
+                <a href="/" class="menu-network__link">Instagram</a>
+              </li>
+              <li class="menu-network__item"><a href="/" class="menu-network__link">Twiiter</a></li>
+              <li class="menu-network__item">
+                <a href="/" class="menu-network__link">Facebook</a>
+              </li>
+              <li class="menu-network__item">
+                <a href="/" class="menu-network__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <div class="mobile-bottom">
-
-        <ul class="mobile-contacts">
-          <li class="mobile-contacts__name">
-            <a class="mobile-contacts__item" href="mailto:info@devstudio.com"
-              ><svg class="mobile-contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="mobile-contacts__name">
-            <a class="mobile-contacts__item" href="tel:+380961111111"
-              ><svg class="mobile-contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-
-
-        <ul class="menu-network">
-          <li class="menu-network__item"><a href="/" class="menu-network__link">Instagram</a></li>
-          <li class="menu-network__item"><a href="/" class="menu-network__link">Twiiter</a></li>
-          <li class="menu-network__item"><a href="/" class="menu-network__link">Facebook</a></li>
-          <li class="menu-network__item"><a href="/" class="menu-network__link">LinkedIn</a></li>
-        </ul>
-        </div>
-
-        </div>        
-        
       </div>
-
     </header>
 
     <main>
@@ -154,7 +161,31 @@
             <li class="examples__demo">
               <a class="examples__link" href="/">
                 <div class="examples__thumb">
-                  <img src="./images/examples/technokriak.jpg" alt="Технокряк" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/examples/technokriak.jpg    1x,
+                        ./images/examples/technokriak-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/technokriak-tab/technokriak-tab-1x.jpg 1x,
+                        ./images/examples/technokriak-tab/technokriak-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/technokriak-mob/technokriak-mob-1x.jpg 1x,
+                        ./images/examples/technokriak-mob/technokriak-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/examples/technokriak.jpg" alt="Технокряк" />
+                  </picture>
+
                   <p class="examples__description">
                     Технокряк пропонує комплексні рішення з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -171,7 +202,28 @@
             <li class="examples__demo">
               <a class="examples__link" href="/">
                 <div class="examples__thumb">
-                  <img src="./images/examples/poster.jpg" alt="Постер" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/examples/poster.jpg 1x, ./images/examples/poster-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/poster-tab/poster-tab-1x.jpg 1x,
+                        ./images/examples/poster-tab/poster-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/poster-mob/poster-mob-1x.jpg 1x,
+                        ./images/examples/poster-mob/poster-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/examples/poster.jpg" alt="Постер" />
+                  </picture>
+
                   <p class="examples__description">
                     Новий Орлеан пропонує комплексні рішення з різним рівнем функціоналу та
                     сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію
@@ -188,7 +240,31 @@
             <li class="examples__demo">
               <a class="examples__link" href="/">
                 <div class="examples__thumb">
-                  <img src="./images/examples/restaurant.jpg" alt="Ресторан" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/examples/restaurant.jpg    1x,
+                        ./images/examples/restaurant-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/restaurant-tab/restaurant-tab-1x.jpg 1x,
+                        ./images/examples/restaurant-tab/restaurant-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/restaurant-mob/restaurant-mob-1x.jpg 1x,
+                        ./images/examples/restaurant-mob/restaurant-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/examples/restaurant.jpg" alt="Ресторан" />
+                  </picture>
+
                   <p class="examples__description">
                     Ресторан пропонує комплексні рішення з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -205,7 +281,31 @@
             <li class="examples__demo">
               <a class="examples__link" href="/">
                 <div class="examples__thumb">
-                  <img src="./images/examples/earphones.jpg" alt="Проект Прайм" width="370" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/examples/earphones.jpg    1x,
+                        ./images/examples/earphones-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/earphones-tab/earphones-tab-1x.jpg 1x,
+                        ./images/examples/earphones-tab/earphones-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/earphones-mob/earphones-mob-1x.jpg 1x,
+                        ./images/examples/earphones-mob/earphones-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/examples/earphones.jpg" alt="Проєкт Прайм" />
+                  </picture>
+
                   <p class="examples__description">
                     Проєкт Prime пропонує комплексні рішення з різним рівнем функціоналу та
                     сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію
@@ -222,7 +322,28 @@
             <li class="examples__demo">
               <a class="examples__link" href="/">
                 <div class="examples__thumb">
-                  <img src="./images/examples/boxes.jpg" alt="Проект Коробочки" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/examples/boxes.jpg 1x, ./images/examples/boxes-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/boxes-tab/boxes-tab-1x.jpg 1x,
+                        ./images/examples/boxes-tab/boxes-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/boxes-mob/boxes-mob-1x.jpg 1x,
+                        ./images/examples/boxes-mob/boxes-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/examples/boxes.jpg" alt="Проєкт Коробочки" />
+                  </picture>
+
                   <p class="examples__description">
                     Проєкт Boxes пропонує комплексні рішення з різним рівнем функціоналу та
                     сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію
@@ -239,11 +360,31 @@
             <li class="examples__demo">
               <a class="examples__link" href="/">
                 <div class="examples__thumb">
-                  <img
-                    src="./images/examples/noborders.jpg"
-                    alt="Изображение монитора"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/examples/noborders.jpg    1x,
+                        ./images/examples/noborders-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/noborders-tab/noborders-tab-1x.jpg 1x,
+                        ./images/examples/noborders-tab/noborders-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/noborders-mob/noborders-mob-1x.jpg 1x,
+                        ./images/examples/noborders-mob/noborders-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/examples/noborders.jpg" alt="Зображення монітора" />
+                  </picture>
+
                   <p class="examples__description">
                     Inspiration has no Borders пропонує комплексні рішення з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
@@ -260,7 +401,28 @@
             <li class="examples__demo">
               <a class="examples__link" href="/">
                 <div class="examples__thumb">
-                  <img src="./images/examples/edition.jpg" alt="Издание" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/examples/edition.jpg 1x, ./images/examples/edition-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/edition-tab/edition-tab-1x.jpg 1x,
+                        ./images/examples/edition-tab/edition-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/edition-mob/edition-mob-1x.jpg 1x,
+                        ./images/examples/edition-mob/edition-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/examples/edition.jpg" alt="Видання" />
+                  </picture>
+
                   <p class="examples__description">
                     Видання пропонує комплексні рішення з різним рівнем функціоналу та сервісів. Все
                     це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -277,7 +439,28 @@
             <li class="examples__demo">
               <a class="examples__link" href="/">
                 <div class="examples__thumb">
-                  <img src="./images/examples/lab.jpg" alt="Проект ЛАБ" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/examples/lab.jpg 1x, ./images/examples/lab-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/lab-tab/lab-tab-1x.jpg 1x,
+                        ./images/examples/lab-tab/lab-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/lab-mob/lab-mob-1x.jpg 1x,
+                        ./images/examples/lab-mob/lab-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/examples/lab.jpg" alt="Проєкт ЛАБ" />
+                  </picture>
+
                   <p class="examples__description">
                     Проєкт LAB пропонує комплексні рішення з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -294,7 +477,28 @@
             <li class="examples__demo">
               <a class="examples__link" href="/">
                 <div class="examples__thumb">
-                  <img src="./images/examples/growing.jpg" alt="Изображение ноутбука" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/examples/growing.jpg 1x, ./images/examples/growing-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/growing-tab/growing-tab-1x.jpg 1x,
+                        ./images/examples/growing-tab/growing-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/growing-mob/growing-mob-1x.jpg 1x,
+                        ./images/examples/growing-mob/growing-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/examples/growing.jpg" alt="Зображення ноутбука" />
+                  </picture>
+
                   <p class="examples__description">
                     Growing Business пропонує комплексні рішення з різним рівнем функціоналу та
                     сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію
@@ -313,51 +517,53 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer--flex">
-        <div class="footer-address">
-          <a class="logo" href="./index.html" lang="en"
-            >Web<span class="logo__accent--inverse">Studio</span>
-          </a>
-          <address class="address">
-            <p class="address__text address__text--physical">м. Київ, пр-т Лесі Українки, 26</p>
-            <ul class="address__list">
-              <li class="address__item">
-                <a class="address__text" href="mailto:info@devstudio.com">info@example.com</a>
+      <div class="container">
+        <div class="footer--flex">
+          <div class="footer-address">
+            <a class="logo" href="./index.html" lang="en"
+              >Web<span class="logo__accent--inverse">Studio</span>
+            </a>
+            <address class="address">
+              <p class="address__text address__text--physical">м. Київ, пр-т Лесі Українки, 26</p>
+              <ul class="address__list">
+                <li class="address__item">
+                  <a class="address__text" href="mailto:info@devstudio.com">info@example.com</a>
+                </li>
+                <li class="address__item">
+                  <a class="address__text" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="caller">
+            <h3 class="caller__title">Приєднуйтесь</h3>
+            <ul class="caller__list">
+              <li class="caller__item">
+                <a href="" class="caller__link"
+                  ><svg class="caller__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use></svg
+                ></a>
               </li>
-              <li class="address__item">
-                <a class="address__text" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="caller__item">
+                <a href="" class="caller__link"
+                  ><svg class="caller__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="caller__item">
+                <a href="" class="caller__link"
+                  ><svg class="caller__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="caller__item">
+                <a href="" class="caller__link"
+                  ><svg class="caller__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="caller">
-          <h3 class="caller__title">Приєднуйтесь</h3>
-          <ul class="caller__list">
-            <li class="caller__item">
-              <a href="" class="caller__link"
-                ><svg class="caller__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li class="caller__item">
-              <a href="" class="caller__link"
-                ><svg class="caller__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="caller__item">
-              <a href="" class="caller__link"
-                ><svg class="caller__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="caller__item">
-              <a href="" class="caller__link"
-                ><svg class="caller__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <div class="subscription">
@@ -383,13 +589,12 @@
       </div>
     </footer>
 
-<script
+    <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
     <script defer src="js/mobile-menu.js"></script>
-
   </body>
 </html>

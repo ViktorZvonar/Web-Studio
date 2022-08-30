@@ -21,8 +21,9 @@
   <body>
     <header class="header">
       <div class="container container--flex">
-          <a class="logo" href="./index.html" lang="en"
-          >Web<span class="logo__accent">Studio</span></a>
+        <a class="logo" href="./index.html" lang="en"
+          >Web<span class="logo__accent">Studio</span></a
+        >
 
         <ul class="link-list">
           <li class="link-list__name">
@@ -49,75 +50,80 @@
               >+38 096 111 11 11</a
             >
           </li>
-        </ul>      
-        
-        <button 
-        type="button" 
-        class="menu-toggle js-open-menu" 
-        aria-expanded="false" 
-        aria-controls="mobile-menu" 
-        data-menu-button>
+        </ul>
+
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-button
+        >
           <svg width="40" height="40" aria-label="menu-switcher">
             <use class="menu-button__sandwich" href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
         </button>
 
         <div class="menu-container js-menu-container" id="mobile-menu" data-menu>
+          <button
+            type="button"
+            class="menu-toggle js-close-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-label="menu-switcher">
+              <use class="menu-button__cross" href="./images/icons.svg#icon-close_40px"></use>
+            </svg>
+          </button>
 
-        <button 
-        type="button" 
-        class="menu-toggle js-close-menu" 
-        aria-expanded="false" 
-        aria-controls="mobile-menu" 
-        data-menu-button>
-          <svg width="40" height="40" aria-label="menu-switcher">
-            <use class="menu-button__cross" href="./images/icons.svg#icon-close_40px"></use>
-        </button>
+          <div class="mobile-top">
+            <ul class="mobile-list">
+              <li class="mobile-list__name">
+                <a class="mobile-list__item mobile-list__item--current" href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="mobile-list__name">
+                <a class="mobile-list__item" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="mobile-list__name"><a class="mobile-list__item" href="./">Контакт</a></li>
+            </ul>
+          </div>
 
-        <div class="mobile-top">
+          <div class="mobile-bottom">
+            <ul class="mobile-contacts">
+              <li class="mobile-contacts__name">
+                <a class="mobile-contacts__item" href="mailto:info@devstudio.com"
+                  ><svg class="mobile-contacts__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope"></use></svg
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-contacts__name">
+                <a class="mobile-contacts__item" href="tel:+380961111111"
+                  ><svg class="mobile-contacts__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-smartphone"></use></svg
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
 
-          <ul class="mobile-list">
-          <li class="mobile-list__name">
-            <a class="mobile-list__item mobile-list__item--current" href="./index.html">Студія</a>
-          </li>
-          <li class="mobile-list__name">
-            <a class="mobile-list__item" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="mobile-list__name"><a class="mobile-list__item" href="./">Контакт</a></li>
-        </ul>
+            <ul class="menu-network">
+              <li class="menu-network__item">
+                <a href="/" class="menu-network__link">Instagram</a>
+              </li>
+              <li class="menu-network__item"><a href="/" class="menu-network__link">Twitter</a></li>
+              <li class="menu-network__item">
+                <a href="/" class="menu-network__link">Facebook</a>
+              </li>
+              <li class="menu-network__item">
+                <a href="/" class="menu-network__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <div class="mobile-bottom">
-
-        <ul class="mobile-contacts">
-          <li class="mobile-contacts__name">
-            <a class="mobile-contacts__item" href="mailto:info@devstudio.com"
-              ><svg class="mobile-contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="mobile-contacts__name">
-            <a class="mobile-contacts__item" href="tel:+380961111111"
-              ><svg class="mobile-contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-
-
-        <ul class="menu-network">
-          <li class="menu-network__item"><a href="/" class="menu-network__link">Instagram</a></li>
-          <li class="menu-network__item"><a href="/" class="menu-network__link">Twitter</a></li>
-          <li class="menu-network__item"><a href="/" class="menu-network__link">Facebook</a></li>
-          <li class="menu-network__item"><a href="/" class="menu-network__link">LinkedIn</a></li>
-        </ul>
-        </div>
-
-        </div>        
-        
       </div>
-
     </header>
 
     <main>
@@ -192,30 +198,36 @@
           <ul class="activities__list">
             <li class="activities__item">
               <div class="activities__thumb">
-                <img 
-                srcset="./images/box1.jpg 1x, ./images/box1-2x.jpg 2x"
-                
-                src="./images/box1.jpg" alt="займаємся1" width="370" />
+                <img
+                  srcset="./images/box1.jpg 1x, ./images/box1-2x.jpg 2x"
+                  src="./images/box1.jpg"
+                  alt="займаємся1"
+                  width="370"
+                />
                 <p class="activities__text">Десктопні додатки</p>
               </div>
             </li>
 
             <li class="activities__item">
               <div class="activities__thumb">
-                <img 
-                srcset="./images/box2.jpg 1x, ./images/box2-2x.jpg 2x"
-                
-                src="./images/box2.jpg" alt="займаємся2" width="370" />
+                <img
+                  srcset="./images/box2.jpg 1x, ./images/box2-2x.jpg 2x"
+                  src="./images/box2.jpg"
+                  alt="займаємся2"
+                  width="370"
+                />
                 <p class="activities__text">Мобільні додатки</p>
               </div>
             </li>
 
             <li class="activities__item">
               <div class="activities__thumb">
-                <img 
-                srcset="./images/box3.jpg 1x, ./images/box3-2x.jpg 2x"
-                
-                src="./images/box3.jpg" alt="займаємся3" width="370" />
+                <img
+                  srcset="./images/box3.jpg 1x, ./images/box3-2x.jpg 2x"
+                  src="./images/box3.jpg"
+                  alt="займаємся3"
+                  width="370"
+                />
                 <p class="activities__text">Дизайнерські рішення</p>
               </div>
             </li>
@@ -229,22 +241,25 @@
           <ul class="teem__list">
             <li class="teem__card">
               <picture>
-
-                <source  
-                srcset="./images/teem/igor.jpg 1x, ./images/teem/igor-2x.jpg 1x 2x"
-                media="(min-width: 1200px)"
+                <source
+                  srcset="./images/teem/igor.jpg 1x, ./images/teem/igor-2x.jpg 2x"
+                  media="(min-width: 1200px)"
                 />
-                <source  
-                srcset="./images/teem/igor-tab/igor-tab-1x.jpg 1x, ./images/teem/igor-tab/igor-tab-2x.jpg 2x"
-                media="(min-width: 768px)"
+                <source
+                  srcset="
+                    ./images/teem/igor-tab/igor-tab-1x.jpg 1x,
+                    ./images/teem/igor-tab/igor-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
                 />
-                <source  
-                srcset="./images/teem/igor-mob/igor-mob-1x.jpg 1x, ./images/teem/igor-mob/igor-mob-2x.jpg 2x"
-                media="(max-width: 767px)"
+                <source
+                  srcset="
+                    ./images/teem/igor-mob/igor-mob-1x.jpg 1x,
+                    ./images/teem/igor-mob/igor-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
                 />
-                <img class="teem__icon" 
-              src="./images/teem/igor.jpg" alt="Игорь" />
-
+                <img class="teem__icon" src="./images/teem/igor.jpg" alt="Игорь" />
               </picture>
 
               <div class="teem__wrap">
@@ -279,24 +294,26 @@
               </div>
             </li>
             <li class="teem__card">
-
               <picture>
-
-                <source  
-                srcset="./images/teem/olga.jpg 1x, ./images/teem/olga-2x.jpg 1x 2x"
-                media="(min-width: 1200px)"
+                <source
+                  srcset="./images/teem/olga.jpg 1x, ./images/teem/olga-2x.jpg 2x"
+                  media="(min-width: 1200px)"
                 />
-                <source  
-                srcset="./images/teem/olga-tab/olga-tab-1x.jpg 1x, ./images/teem/olga-tab/olga-tab-2x.jpg 2x"
-                media="(min-width: 768px)"
+                <source
+                  srcset="
+                    ./images/teem/olga-tab/olga-tab-1x.jpg 1x,
+                    ./images/teem/olga-tab/olga-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
                 />
-                <source  
-                srcset="./images/teem/olga-mob/olga-mob-1x.jpg 1x, ./images/teem/olga-mob/olga-mob-2x.jpg 2x"
-                media="(max-width: 767px)"
+                <source
+                  srcset="
+                    ./images/teem/olga-mob/olga-mob-1x.jpg 1x,
+                    ./images/teem/olga-mob/olga-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
                 />
-                <img class="teem__icon" 
-              src="./images/teem/olga.jpg" alt="Ольга" />
-
+                <img class="teem__icon" src="./images/teem/olga.jpg" alt="Ольга" />
               </picture>
 
               <div class="teem__wrap">
@@ -333,23 +350,27 @@
             </li>
             <li class="teem__card">
               <picture>
-
-                <source  
-                srcset="./images/teem/nickolai.jpg 1x, ./images/teem/nickolai-2x.jpg 1x 2x"
-                media="(min-width: 1200px)"
+                <source
+                  srcset="./images/teem/nickolai.jpg 1x, ./images/teem/nickolai-2x.jpg 2x"
+                  media="(min-width: 1200px)"
                 />
-                <source  
-                srcset="./images/teem/nickolai-tab/nickolai-tab-1x.jpg 1x, ./images/teem/nickolai-tab/nickolai-tab-2x.jpg 2x"
-                media="(min-width: 768px)"
+                <source
+                  srcset="
+                    ./images/teem/nickolai-tab/nickolai-tab-1x.jpg 1x,
+                    ./images/teem/nickolai-tab/nickolai-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
                 />
-                <source  
-                srcset="./images/teem/nickolai-mob/nickolai-mob-1x.jpg 1x, ./images/teem/nickolai-mob/nickolai-mob-2x.jpg 2x"
-                media="(max-width: 767px)"
+                <source
+                  srcset="
+                    ./images/teem/nickolai-mob/nickolai-mob-1x.jpg 1x,
+                    ./images/teem/nickolai-mob/nickolai-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
                 />
                 <img class="teem__icon" src="./images/teem/olga.jpg" alt="Николай" />
+              </picture>
 
-              </picture>              
-             
               <div class="teem__wrap">
                 <h3 class="teem__member">Микола Тарасов</h3>
                 <p lang="en" class="teem__position">Marketing</p>
@@ -383,24 +404,27 @@
               </div>
             </li>
             <li class="teem__card">
-
               <picture>
-
-                <source  
-                srcset="./images/teem/mikhail.jpg 1x, ./images/teem/mikhail-2x.jpg 1x 2x"
-                media="(min-width: 1200px)"
+                <source
+                  srcset="./images/teem/mikhail.jpg 1x, ./images/teem/mikhail-2x.jpg 2x"
+                  media="(min-width: 1200px)"
                 />
-                <source  
-                srcset="./images/teem/mikhail-tab/mikhail-tab-1x.jpg 1x, ./images/teem/mikhail-tab/mikhail-tab-2x.jpg 2x"
-                media="(min-width: 768px)"
+                <source
+                  srcset="
+                    ./images/teem/mikhail-tab/mikhail-tab-1x.jpg 1x,
+                    ./images/teem/mikhail-tab/mikhail-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
                 />
-                <source  
-                srcset="./images/teem/mikhail-mob/mikhail-mob-1x.jpg 1x, ./images/teem/mikhail-mob/mikhail-mob-2x.jpg 2x"
-                media="(max-width: 767px)"
+                <source
+                  srcset="
+                    ./images/teem/mikhail-mob/mikhail-mob-1x.jpg 1x,
+                    ./images/teem/mikhail-mob/mikhail-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
                 />
                 <img class="teem__icon" src="./images/teem/olga.jpg" alt="Михаил" />
-
-              </picture>             
+              </picture>
 
               <div class="teem__wrap">
                 <h3 class="teem__member">Михайло Єрмаков</h3>
@@ -484,54 +508,52 @@
 
     <footer class="footer">
       <div class="container">
-        
         <div class="footer--flex">
-
-        <div class="footer-address">
-          <a class="logo" href="./index.html" lang="en"
-            >Web<span class="logo__accent--inverse">Studio</span>
-          </a>
-          <address class="address">
-            <p class="address__text address__text--physical">м. Київ, пр-т Лесі Українки, 26</p>
-            <ul class="address__list">
-              <li class="address__item">
-                <a class="address__text" href="mailto:info@devstudio.com">info@example.com</a>
+          <div class="footer-address">
+            <a class="logo" href="./index.html" lang="en"
+              >Web<span class="logo__accent--inverse">Studio</span>
+            </a>
+            <address class="address">
+              <p class="address__text address__text--physical">м. Київ, пр-т Лесі Українки, 26</p>
+              <ul class="address__list">
+                <li class="address__item">
+                  <a class="address__text" href="mailto:info@devstudio.com">info@example.com</a>
+                </li>
+                <li class="address__item">
+                  <a class="address__text" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="caller">
+            <h3 class="caller__title">Приєднуйтесь</h3>
+            <ul class="caller__list">
+              <li class="caller__item">
+                <a href="" class="caller__link"
+                  ><svg class="caller__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use></svg
+                ></a>
               </li>
-              <li class="address__item">
-                <a class="address__text" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="caller__item">
+                <a href="" class="caller__link"
+                  ><svg class="caller__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="caller__item">
+                <a href="" class="caller__link"
+                  ><svg class="caller__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="caller__item">
+                <a href="" class="caller__link"
+                  ><svg class="caller__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="caller">
-          <h3 class="caller__title">Приєднуйтесь</h3>
-          <ul class="caller__list">
-            <li class="caller__item">
-              <a href="" class="caller__link"
-                ><svg class="caller__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li class="caller__item">
-              <a href="" class="caller__link"
-                ><svg class="caller__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="caller__item">
-              <a href="" class="caller__link"
-                ><svg class="caller__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="caller__item">
-              <a href="" class="caller__link"
-                ><svg class="caller__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
+          </div>
         </div>
 
         <div class="subscription">
@@ -632,6 +654,6 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/mobile-menu.js"></script>    
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

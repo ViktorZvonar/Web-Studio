@@ -7,7 +7,7 @@
   margin: 0 auto 30px;
 
   font-weight: var(--fw-bold);
-  font-size: 28px;
+  font-size: var(--title-mob-tab-fz);
   line-height: calc(33 / 28);
   text-align: center;
   letter-spacing: 0.03em;
@@ -16,7 +16,7 @@
   @media screen and (min-width: 1200px) {
     margin: 0 auto 50px;
     font-size: var(--title-fz);
-    line-height: calc(42.19 / 36);
+    line-height: calc(42 / 36);
   }
 }
 
