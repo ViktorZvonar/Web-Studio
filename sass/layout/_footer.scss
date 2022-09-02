@@ -1,15 +1,21 @@
 .footer {
-  padding: 60px 0;
-  text-align: center;
-
-  @media screen and (min-width: 1200px) {
-    text-align: start;
-    position: relative;
-    width: 1200px;
-    margin: 0 auto;
+  @media screen and (max-width: 1199px) {
+    padding: 60px 0;
   }
 
+  text-align: center;
+
   &--flex {
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+      padding: 60px 15px;
+      position: relative;
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+
+  &--wrap {
     @media screen and (min-width: 768px) {
       display: flex;
       align-items: baseline;

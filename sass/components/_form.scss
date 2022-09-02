@@ -79,7 +79,7 @@
 
   @media screen and (max-width: 479px) {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -127,4 +127,8 @@
 
 .check__btn {
   padding: 10px 52px;
+
+  @media screen and (max-width: 479px) {
+    font-size: var(--minute-fz);
+  }
 }
