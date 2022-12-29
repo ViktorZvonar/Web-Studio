@@ -34,7 +34,6 @@
               >Портфоліо</a
             >
           </li>
-          <li class="link-list__name"><a class="link-list__item" href="./">Контакт</a></li>
         </ul>
 
         <ul class="contact-list">
@@ -89,7 +88,6 @@
                   >Портфоліо</a
                 >
               </li>
-              <li class="mobile-list__name"><a class="mobile-list__item" href="./">Контакт</a></li>
             </ul>
           </div>
 
@@ -135,23 +133,23 @@
 
           <ul class="filter">
             <li class="filter__item">
-              <button type="button" class="button filter__btn">Все</button>
+              <button type="button" class="button filter__btn" data-all>Все</button>
             </li>
 
             <li class="filter__item">
-              <button type="button" class="button filter__btn">Веб-сайти</button>
+              <button type="button" class="button filter__btn" data-sites>Веб-сайти</button>
             </li>
 
             <li class="filter__item">
-              <button type="button" class="button filter__btn">Додатки</button>
+              <button type="button" class="button filter__btn" data-apps>Додатки</button>
             </li>
 
             <li class="filter__item">
-              <button type="button" class="button filter__btn">Дизайн</button>
+              <button type="button" class="button filter__btn" data-design>Дизайн</button>
             </li>
 
             <li class="filter__item">
-              <button type="button" class="button filter__btn">Маркетинг</button>
+              <button type="button" class="button filter__btn" data-market>Маркетинг</button>
             </li>
           </ul>
 
@@ -159,7 +157,7 @@
 
           <ul class="examples__list">
             <li class="examples__demo">
-              <a class="examples__link" href="/">
+              <a class="examples__link" data-demo-sites href="./pay.html">
                 <div class="examples__thumb">
                   <picture>
                     <source
@@ -187,9 +185,7 @@
                   </picture>
 
                   <p class="examples__description">
-                    Технокряк пропонує комплексні рішення з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
+                    Студія "Технокряк" втілює найсміливіші ідеї в життя!
                   </p>
                 </div>
                 <div class="examples__wrap">
@@ -200,7 +196,7 @@
             </li>
 
             <li class="examples__demo">
-              <a class="examples__link" href="/">
+              <a class="examples__link" data-demo-design href="./pay.html">
                 <div class="examples__thumb">
                   <picture>
                     <source
@@ -224,11 +220,7 @@
                     <img src="./images/examples/poster.jpg" alt="Постер" />
                   </picture>
 
-                  <p class="examples__description">
-                    Новий Орлеан пропонує комплексні рішення з різним рівнем функціоналу та
-                    сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію
-                    чи приватну особу.
-                  </p>
+                  <p class="examples__description">Новий Орлеан - це те, що драйвить і надихає.</p>
                 </div>
                 <div class="examples__wrap">
                   <h3 class="examples__name">Постер New Orlean vs Golden Star</h3>
@@ -238,48 +230,117 @@
             </li>
 
             <li class="examples__demo">
-              <a class="examples__link" href="/">
+              <a class="examples__link" data-demo-sites href="./pay.html">
                 <div class="examples__thumb">
                   <picture>
                     <source
                       srcset="
-                        ./images/examples/restaurant.jpg    1x,
-                        ./images/examples/restaurant-2x.jpg 2x
+                        ./images/examples/noborders.jpg    1x,
+                        ./images/examples/noborders-2x.jpg 2x
                       "
                       media="(min-width: 1200px)"
                     />
                     <source
                       srcset="
-                        ./images/examples/restaurant-tab/restaurant-tab-1x.jpg 1x,
-                        ./images/examples/restaurant-tab/restaurant-tab-2x.jpg 2x
+                        ./images/examples/noborders-tab/noborders-tab-1x.jpg 1x,
+                        ./images/examples/noborders-tab/noborders-tab-2x.jpg 2x
                       "
                       media="(min-width: 768px)"
                     />
                     <source
                       srcset="
-                        ./images/examples/restaurant-mob/restaurant-mob-1x.jpg 1x,
-                        ./images/examples/restaurant-mob/restaurant-mob-2x.jpg 2x
+                        ./images/examples/noborders-mob/noborders-mob-1x.jpg 1x,
+                        ./images/examples/noborders-mob/noborders-mob-2x.jpg 2x
                       "
                       media="(max-width: 767px)"
                     />
-                    <img src="./images/examples/restaurant.jpg" alt="Ресторан" />
+                    <img src="./images/examples/noborders.jpg" alt="Зображення монітора" />
                   </picture>
 
                   <p class="examples__description">
-                    Ресторан пропонує комплексні рішення з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
+                    Inspiration has no Borders! Ніколи не пізно почати спочатку... Треба тільки
+                    вірити!
                   </p>
                 </div>
                 <div class="examples__wrap">
-                  <h3 class="examples__name">Ресторан Seafood</h3>
-                  <p class="examples__text">Додаток</p>
+                  <h3 class="examples__name">Inspiration has no Borders</h3>
+                  <p class="examples__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
             <li class="examples__demo">
-              <a class="examples__link" href="/">
+              <a class="examples__link" data-demo-marketing href="./pay.html">
+                <div class="examples__thumb">
+                  <picture>
+                    <source
+                      srcset="./images/examples/lab.jpg 1x, ./images/examples/lab-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/lab-tab/lab-tab-1x.jpg 1x,
+                        ./images/examples/lab-tab/lab-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/lab-mob/lab-mob-1x.jpg 1x,
+                        ./images/examples/lab-mob/lab-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/examples/lab.jpg" alt="Проєкт ЛАБ" />
+                  </picture>
+
+                  <p class="examples__description">
+                    Проєкт LAB - платформа інновацій та проривних ідей
+                  </p>
+                </div>
+                <div class="examples__wrap">
+                  <h3 class="examples__name">Проєкт LAB</h3>
+                  <p class="examples__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="examples__demo">
+              <a class="examples__link" data-demo-design href="./pay.html">
+                <div class="examples__thumb">
+                  <picture>
+                    <source
+                      srcset="./images/examples/edition.jpg 1x, ./images/examples/edition-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/edition-tab/edition-tab-1x.jpg 1x,
+                        ./images/examples/edition-tab/edition-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/edition-mob/edition-mob-1x.jpg 1x,
+                        ./images/examples/edition-mob/edition-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/examples/edition.jpg" alt="Видання" />
+                  </picture>
+
+                  <p class="examples__description">Ми робимо відомими історії Вашого успіху!</p>
+                </div>
+                <div class="examples__wrap">
+                  <h3 class="examples__name">Видавництво Limited Ed</h3>
+                  <p class="examples__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="examples__demo">
+              <a class="examples__link" data-demo-marketing href="./pay.html">
                 <div class="examples__thumb">
                   <picture>
                     <source
@@ -308,8 +369,7 @@
 
                   <p class="examples__description">
                     Проєкт Prime пропонує комплексні рішення з різним рівнем функціоналу та
-                    сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію
-                    чи приватну особу.
+                    сервісів.
                   </p>
                 </div>
                 <div class="examples__wrap">
@@ -320,7 +380,78 @@
             </li>
 
             <li class="examples__demo">
-              <a class="examples__link" href="/">
+              <a class="examples__link" data-demo-apps href="./pay.html">
+                <div class="examples__thumb">
+                  <picture>
+                    <source
+                      srcset="./images/examples/growing.jpg 1x, ./images/examples/growing-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/growing-tab/growing-tab-1x.jpg 1x,
+                        ./images/examples/growing-tab/growing-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/growing-mob/growing-mob-1x.jpg 1x,
+                        ./images/examples/growing-mob/growing-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/examples/growing.jpg" alt="Зображення ноутбука" />
+                  </picture>
+
+                  <p class="examples__description">Growing Business - з нами весь світ!</p>
+                </div>
+                <div class="examples__wrap">
+                  <h3 class="examples__name">Growing Business</h3>
+                  <p class="examples__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="examples__demo">
+              <a class="examples__link" data-demo-apps href="./pay.html">
+                <div class="examples__thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/examples/restaurant.jpg    1x,
+                        ./images/examples/restaurant-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/restaurant-tab/restaurant-tab-1x.jpg 1x,
+                        ./images/examples/restaurant-tab/restaurant-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/examples/restaurant-mob/restaurant-mob-1x.jpg 1x,
+                        ./images/examples/restaurant-mob/restaurant-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/examples/restaurant.jpg" alt="Ресторан" />
+                  </picture>
+
+                  <p class="examples__description">Віртуально апетитно!</p>
+                </div>
+                <div class="examples__wrap">
+                  <h3 class="examples__name">Ресторан Seafood</h3>
+                  <p class="examples__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="examples__demo">
+              <a class="examples__link" data-demo-apps href="./pay.html">
                 <div class="examples__thumb">
                   <picture>
                     <source
@@ -345,168 +476,12 @@
                   </picture>
 
                   <p class="examples__description">
-                    Проєкт Boxes пропонує комплексні рішення з різним рівнем функціоналу та
-                    сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію
-                    чи приватну особу.
-                  </p>
-                </div>
-                <div class="examples__wrap">
-                  <h3 class="examples__name">Проєкт Boxes</h3>
-                  <p class="examples__text">Додаток</p>
-                </div>
-              </a>
-            </li>
-
-            <li class="examples__demo">
-              <a class="examples__link" href="/">
-                <div class="examples__thumb">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/examples/noborders.jpg    1x,
-                        ./images/examples/noborders-2x.jpg 2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/examples/noborders-tab/noborders-tab-1x.jpg 1x,
-                        ./images/examples/noborders-tab/noborders-tab-2x.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/examples/noborders-mob/noborders-mob-1x.jpg 1x,
-                        ./images/examples/noborders-mob/noborders-mob-2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                    />
-                    <img src="./images/examples/noborders.jpg" alt="Зображення монітора" />
-                  </picture>
-
-                  <p class="examples__description">
-                    Inspiration has no Borders пропонує комплексні рішення з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні
-                    відомості про компанію чи приватну особу.
-                  </p>
-                </div>
-                <div class="examples__wrap">
-                  <h3 class="examples__name">Inspiration has no Borders</h3>
-                  <p class="examples__text">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
-
-            <li class="examples__demo">
-              <a class="examples__link" href="/">
-                <div class="examples__thumb">
-                  <picture>
-                    <source
-                      srcset="./images/examples/edition.jpg 1x, ./images/examples/edition-2x.jpg 2x"
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/examples/edition-tab/edition-tab-1x.jpg 1x,
-                        ./images/examples/edition-tab/edition-tab-2x.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/examples/edition-mob/edition-mob-1x.jpg 1x,
-                        ./images/examples/edition-mob/edition-mob-2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                    />
-                    <img src="./images/examples/edition.jpg" alt="Видання" />
-                  </picture>
-
-                  <p class="examples__description">
-                    Видання пропонує комплексні рішення з різним рівнем функціоналу та сервісів. Все
-                    це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
-                    особу.
-                  </p>
-                </div>
-                <div class="examples__wrap">
-                  <h3 class="examples__name">Видання Limited Edition</h3>
-                  <p class="examples__text">Дизайн</p>
-                </div>
-              </a>
-            </li>
-
-            <li class="examples__demo">
-              <a class="examples__link" href="/">
-                <div class="examples__thumb">
-                  <picture>
-                    <source
-                      srcset="./images/examples/lab.jpg 1x, ./images/examples/lab-2x.jpg 2x"
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/examples/lab-tab/lab-tab-1x.jpg 1x,
-                        ./images/examples/lab-tab/lab-tab-2x.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/examples/lab-mob/lab-mob-1x.jpg 1x,
-                        ./images/examples/lab-mob/lab-mob-2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                    />
-                    <img src="./images/examples/lab.jpg" alt="Проєкт ЛАБ" />
-                  </picture>
-
-                  <p class="examples__description">
-                    Проєкт LAB пропонує комплексні рішення з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    Проєкт Boxes дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
                 <div class="examples__wrap">
-                  <h3 class="examples__name">Проєкт LAB</h3>
-                  <p class="examples__text">Маркетинг</p>
-                </div>
-              </a>
-            </li>
-
-            <li class="examples__demo">
-              <a class="examples__link" href="/">
-                <div class="examples__thumb">
-                  <picture>
-                    <source
-                      srcset="./images/examples/growing.jpg 1x, ./images/examples/growing-2x.jpg 2x"
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/examples/growing-tab/growing-tab-1x.jpg 1x,
-                        ./images/examples/growing-tab/growing-tab-2x.jpg 2x
-                      "
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/examples/growing-mob/growing-mob-1x.jpg 1x,
-                        ./images/examples/growing-mob/growing-mob-2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                    />
-                    <img src="./images/examples/growing.jpg" alt="Зображення ноутбука" />
-                  </picture>
-
-                  <p class="examples__description">
-                    Growing Business пропонує комплексні рішення з різним рівнем функціоналу та
-                    сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію
-                    чи приватну особу.
-                  </p>
-                </div>
-                <div class="examples__wrap">
-                  <h3 class="examples__name">Growing Business</h3>
+                  <h3 class="examples__name">Проєкт Boxes</h3>
                   <p class="examples__text">Додаток</p>
                 </div>
               </a>
@@ -595,6 +570,7 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
+    <script defer src="js/filter.js"></script>
     <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
